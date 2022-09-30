@@ -1,6 +1,8 @@
 # MiniShop
 ##项目结构
+
 components
+
 └─ search
 
        ├─ search.js
