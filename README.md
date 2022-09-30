@@ -5,13 +5,13 @@ components
 
 └─ search
 
-       ├─ search.js
+│       ├─ search.js
        
-       ├─ search.json
+│       ├─ search.json
        
-       ├─ search.wxml
+│       ├─ search.wxml
        
-       └─ search.wxss
+│      └─ search.wxss
        
 pages
 
