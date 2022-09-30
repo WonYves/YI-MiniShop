@@ -5,97 +5,97 @@ components
 
 └─ search
 
-│       ├─ search.js
+       ├─ search.js
        
-│       ├─ search.json
+       ├─ search.json
        
-│       ├─ search.wxml
+       ├─ search.wxml
        
-│      └─ search.wxss
+      └─ search.wxss
        
 pages
 
 ├─ auth
 
-│    ├─ auth.js
+    ├─ auth.js
 
-│    ├─ auth.json
+    ├─ auth.json
 
-│    ├─ auth.wxml
+    ├─ auth.wxml
 
-│    └─ auth.wxss
+    └─ auth.wxss
 
 ├─ category
 
-│    ├─ category.js
+    ├─ category.js
 
-│    ├─ category.json
+    ├─ category.json
 
-│    ├─ category.wxml
+    ├─ category.wxml
 
-│    └─ category.wxss
+    └─ category.wxss
 
 ├─ center
 
-│    ├─ center.js
+    ├─ center.js
 
-│    ├─ center.json
+    ├─ center.json
 
-│    ├─ center.wxml
+    ├─ center.wxml
 
-│    └─ center.wxss
+    └─ center.wxss
 
 ├─ detail
 
-│    ├─ detail.js
+    ├─ detail.js
 
-│    ├─ detail.json
+    ├─ detail.json
 
-│    ├─ detail.wxml
+    ├─ detail.wxml
 
-│    └─ detail.wxss
+    └─ detail.wxss
 
 ├─ home
 
-│    ├─ home.js
+    ├─ home.js
 
-│    ├─ home.json
+    ├─ home.json
 
-│    ├─ home.wxml
+    ├─ home.wxml
 
-│    └─ home.wxss
+    └─ home.wxss
 
 ├─ search
 
-│    ├─ search.js
+    ├─ search.js
 
-│    ├─ search.json
+    ├─ search.json
 
-│    ├─ search.wxml
+    ├─ search.wxml
 
-│    └─ search.wxss
+    └─ search.wxss
 
 ├─ searchlist
 
-│    ├─ searchlist.js
+    ├─ searchlist.js
 
-│    ├─ searchlist.json
+    ├─ searchlist.json
 
-│    ├─ searchlist.wxml
+    ├─ searchlist.wxml
 
-│    └─ searchlist.wxss
+    └─ searchlist.wxss
 
 ├─ shopcar
 
-│    ├─ shopcar.js
+    ├─ shopcar.js
 
-│    ├─ shopcar.json
+    ├─ shopcar.json
 
-│    ├─ shopcar.wxml
+    ├─ shopcar.wxml
 
-│    ├─ shopcar.wxs
+    ├─ shopcar.wxs
 
-│    └─ shopcar.wxss
+    └─ shopcar.wxss
 
 └─ telform
 
@@ -110,6 +110,6 @@ pages
        
 util
 
-├─ auth.js
+       ├─ auth.js
 
-└─ request.js
+       └─ request.js
