@@ -1,0 +1,17 @@
+<view class="container">
+  <scroll-view class='nav_left' scroll-y='true'>
+    <view wx:for="{{titlelist}}" wx:key="index">
+      <view class="nav_left_items {{curnav===item.id?'active':''}}" bindtap="switchRightTab" data-index='{{index}}' data-id="{{item.id}}">
+      {{item.title}}
+      </view>
+    </view>
+  </scroll-view>
+  <scroll-view class="nav_right" scroll-y="true">
+      <view wx:for="{{titlelist[curIndex].goods}}" wx:key="index">
+        <view class="nav_right_items" bindtap="handleTap" data-id="{{item.id}}" data-name="{{item.title}}">
+            <image src="http://localhost:5000{{item.poster}}"></image>
+            <text>{{item.title}}</text>
+        </view>
+    </view>
+  </scroll-view>
+</view>

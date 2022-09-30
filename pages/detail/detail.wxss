@@ -1,0 +1,65 @@
+/* pages/detail/detail.wxss */
+swiper image{
+    width: 100%;
+    height: 200px;
+}
+swiper{
+    height: 200px;
+}
+.tabbar{
+    display: flex;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    background-color: white;
+    padding: 10rpx;
+    width: 100vw;
+}
+.tabbar view{
+    flex: 1;
+    font-size: 35rpx;
+}
+.active{
+    color: white;
+    background: #72baa7;
+}
+.user{
+    overflow: hidden;
+}
+.user image{
+    width: 100rpx;
+    border-radius: 50%;
+}
+.user .left{
+    float: left;
+    height: 100rpx;
+    line-height: 100rpx;
+    margin: 10rpx;
+}
+.user .right{
+    float: right;
+    height: 110rpx;
+    line-height: 110rpx;
+}
+.content{
+    padding: 20rpx;
+}
+.content image{
+    width: 200rpx;
+}
+
+.bottom{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 70rpx;
+    line-height: 70rpx;
+    width: 100vw;
+    background-color: #feeeed;
+    color: white;
+}
+.bottom view{
+    flex: 1;
+    text-align: center;
+}

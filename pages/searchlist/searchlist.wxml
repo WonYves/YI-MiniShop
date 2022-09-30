@@ -1,0 +1,23 @@
+<!--pages/searchlist/searchlist.wxml-->
+
+    <view class="sortlist">
+        <view>价格排序
+            <mp-icon type="field" icon="refresh" color="black" size="{{20}}" bindtap="handlePrice"></mp-icon>
+        </view>
+        <view>好评排序
+            <mp-icon type="field" icon="refresh" color="black" size="{{20}}" bindtap="handleComment"></mp-icon>
+        </view>
+    </view>
+
+<view class="goodcontainer">
+    <view wx:for="{{goodlist}}" wx:key="index" class="good" data-id="{{item.id}}" data-name="{{item.title}}" bindtap="handleTap">
+        <image src="http://localhost:5000{{item.poster}}" mode="widthFix"></image>
+        <view style="color: #121a2a;">{{item.title}}</view>
+        <view>价格：
+            <text style="color: red;">￥{{item.price}}</text>
+        </view>
+        <view>好评率：
+            <text style="color: hotpink;">{{item.goodcomment}}</text>
+        </view>
+    </view>
+</view>

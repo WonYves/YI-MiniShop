@@ -1,0 +1,38 @@
+<!--pages/shopcar/shopcar.wxml-->
+<mp-cells ext-class="my-cells" title="弋购商城" footer="左滑可以删除" wx:if="{{cartlist.length}}">
+    <mp-slideview buttons="{{spliceButton}}" bindbuttontap="handleLeft" wx:for="{{cartlist}}" wx:key="index" data-id="{{item.id}}">
+        <mp-cell>
+            <view class="content">
+                <checkbox checked="{{item.checked}}" bindtap="handlebind" data-item="{{item}}"></checkbox>
+                <image src="http://localhost:5000{{item.good.poster}}" mode="aspectFit" bindtap="handleTo" data-id="{{item.id}}" data-name="{{item.good.title}}"></image>
+                <view style="font-size: 12px; margin-top:20rpx; margin-left: 20rpx;">
+                    <view>{{item.good.title}}</view>
+                    <view style="color: red;">金额：￥{{item.good.price}}</view>
+                </view>
+            </view>
+
+            <view slot="footer">
+                <text class="btnleft" bindtap="handleReduce" data-item="{{item}}">-</text>
+                <text>{{item.number}}</text>
+                <text class="btnright" bindtap="handleAdd" data-item="{{item}}">+</text>
+            </view>
+        </mp-cell>
+    </mp-slideview>
+</mp-cells>
+
+<view wx:else class="buynull">
+    <image src="../../icon/笑脸1.png" mode="aspectFit" style="height: 300rpx;"></image>
+</view>
+
+<wxs src="./shopcar.wxs" module="calObj"></wxs>
+
+<view class="footer">
+    <checkbox-group bindchange="handleChange">
+        <checkbox value="aaa" checked="{{calObj.check(cartlist)}}"></checkbox>
+    </checkbox-group>
+    <view>全选</view>
+    <view style="margin-left: 40rpx;">总金额:
+        <text style="color: red;">￥{{calObj.sum(cartlist)}}</text>
+    </view>
+    <view class="smallbtn">去结算</view>
+</view>

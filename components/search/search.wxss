@@ -1,0 +1,9 @@
+/* components/search/search.wxss */
+
+.inp{
+    border-radius: 35rpx;
+    margin: 10rpx;
+    padding: 10rpx;
+    background-color:#72baa7;
+    font-size: 14px;
+}

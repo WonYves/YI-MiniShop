@@ -1,0 +1,54 @@
+/* pages/shopcar/shopcar.wxss */
+.btnleft, .btnright{
+    width: 50rpx;
+    height: 50rpx;
+    line-height: 50rpx;
+    display: inline-block;
+    text-align: center;
+    background: gainsboro;
+    margin: 20rpx;
+}
+.content{
+    display: flex;
+}
+.content image{
+    width: 150rpx;
+    height: 150rpx;
+}
+
+.footer{
+    display: flex;
+    text-align: center;
+    height: 80rpx;
+    line-height: 80rpx;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: #afb4db;
+    align-items: center;
+    color: white;
+}
+.footer checkbox{
+    position: relative;
+    left:6rpx;
+    bottom: 5rpx;
+}
+.footer .smallbtn{
+    text-align: center;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #77787b;
+    position: absolute;
+    right:40rpx;
+    border-radius: 20px;
+    color: #76624c;
+}
+
+.buynull{
+   position: absolute;
+   left: 50%;
+   top: 45%;
+   transform: translate(-50%,-50%);
+}

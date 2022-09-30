@@ -1,0 +1,50 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/category/category",
+    "pages/shopcar/shopcar",
+    "pages/center/center",
+    "pages/detail/detail",
+    "pages/search/search",
+    "pages/searchlist/searchlist",
+    "pages/telform/telform",
+    "pages/auth/auth"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#72baa7",
+    "navigationBarTitleText": "弋购",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "selectedColor":"#000000",
+    "color": "#72baa7",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "./icon/首页1.png",
+      "selectedIconPath": "./icon/首页.png"
+    },{
+      "pagePath": "pages/category/category",
+      "text": "分类",
+      "iconPath": "./icon/分类1.png",
+      "selectedIconPath": "./icon/分类.png"
+    },{
+      "pagePath": "pages/shopcar/shopcar",
+      "text": "购物车",
+      "iconPath": "./icon/购物车1.png",
+      "selectedIconPath": "./icon/购物车.png"
+    },{
+      "pagePath": "pages/center/center",
+      "text": "我的",
+      "iconPath": "./icon/我的1.png",
+      "selectedIconPath": "./icon/我的.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib": {
+    "weui": true
+  }
+
+}
