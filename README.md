@@ -4,9 +4,9 @@
 
 ##项目结构
 
-components
-
-└─ search
+components   组件
+ 
+└─ search    搜索框
 
        ├─ search.js
        
@@ -18,7 +18,7 @@ components
        
 pages
 
-├─ auth
+├─ auth  微信授权-页面 
 
     ├─ auth.js
 
@@ -28,7 +28,7 @@ pages
 
     └─ auth.wxss
 
-├─ category
+├─ category   分类-页面
 
     ├─ category.js
 
@@ -38,7 +38,7 @@ pages
 
     └─ category.wxss
 
-├─ center
+├─ center  我的-页面 
 
     ├─ center.js
 
@@ -48,7 +48,7 @@ pages
 
     └─ center.wxss
 
-├─ detail
+├─ detail 商品详情-页面
 
     ├─ detail.js
 
@@ -58,7 +58,7 @@ pages
 
     └─ detail.wxss
 
-├─ home
+├─ home 首页商城-页面
 
     ├─ home.js
 
@@ -68,7 +68,7 @@ pages
 
     └─ home.wxss
 
-├─ search
+├─ search 搜索-页面
 
     ├─ search.js
 
@@ -78,7 +78,7 @@ pages
 
     └─ search.wxss
 
-├─ searchlist
+├─ searchlist  搜索列表-页面
 
     ├─ searchlist.js
 
@@ -88,7 +88,7 @@ pages
 
     └─ searchlist.wxss
 
-├─ shopcar
+├─ shopcar 购物车-页面
 
     ├─ shopcar.js
 
@@ -100,7 +100,7 @@ pages
 
     └─ shopcar.wxss
 
-└─ telform
+└─ telform 手机绑定-页面
 
        ├─ telform.js
        
@@ -113,6 +113,12 @@ pages
        
 util
 
-       ├─ auth.js
-
-       └─ request.js
+       ├─ auth.js   Sorage获取token tel 
+       1.判断本地存储是否有手机号信息 如果有 直接加入 
+       
+       2.没有手机号 判断是否有token信息   授权信息 如果有 引导跳转到手机号绑定
+       
+       3.没有授权信息 我们先引导用户到授权页面
+   
+       └─ request.js  封装Ajax Promise接收参数 展开参数 放在这和后面的内容进行拼接
+       
