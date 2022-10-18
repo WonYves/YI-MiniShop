@@ -88,7 +88,7 @@ util
 ```
        
 ## 功能
-
+```
 轮播 
 
 懒加载
@@ -104,7 +104,7 @@ util
 金额试算
 
 换头像功能等
-
+```
 ## 效果预览
 
 ![`37O6C@409}SM@{{{(%{CIY](https://user-images.githubusercontent.com/113281531/193313044-4d7b5b63-07f0-4674-9ce1-f284b6fcce26.png)
